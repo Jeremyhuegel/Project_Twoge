@@ -3,7 +3,7 @@
 
 README.txt
 
-![Alt text]()
+
 
 
 # Twoge Infrastructure Setup
