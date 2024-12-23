@@ -61,9 +61,9 @@
 - **Network**: `jeremy-twoge-vpc`, `jeremy-twoge-public1`
 - **Security Group**: `jeremy-twoge-sg` (allow SSH, HTTP, PostgreSQL rules)
 
-###Creating PostgresSQL RDS  ### Creating PostgresSQL RDS
+###Creating PostgresSQL RDS  
+- PostgreSQL / Free Tier / Single DB instance / jeremy-twoge-db / UN postgres  PA 11111111 / connect to jeremy-twoge-ec2 / jeremy-twoge-sg / 
 
-PostgreSQL / Free Tier / Single DB instance / jeremy-twoge-db / UN postgres  PA 11111111 / connect to jeremy-twoge-ec2 / jeremy-twoge-sg / 
 
 ## Installation on EC2
 ```bash
