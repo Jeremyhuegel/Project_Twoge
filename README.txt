@@ -2,6 +2,8 @@ README.txt
 
 ![Alt text]()
 
+![S3 Bucket Policy](https://github.com/user-attachments/assets/419da1a7-5ffd-4a87-a389-76a160b438cd)
+
 
 # Twoge Infrastructure Setup
 
