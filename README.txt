@@ -38,14 +38,15 @@ README.txt
    - Add NAT gateway as destination.
    - Associate private subnets.
 
-## S3 Bucket
+### Create S3 Bucket
 - **Name**: `Jeremy-twoge-s3`
 - Settings:
   - Allow public access
   - Enable versioning
   - Add bucket policy to allow public access
 
-## EC2 Instance
+
+
 
 ### Create EC2 Instance
 - **Name**: `Jeremy-twoge-ec2`
@@ -55,7 +56,7 @@ README.txt
 - **Network**: `jeremy-twoge-vpc`, `jeremy-twoge-public1`
 - **Security Group**: `jeremy-twoge-sg` (allow SSH, HTTP, PostgreSQL rules)
 
-### Installation on EC2
+## Installation on EC2
 ```bash
 # Update
 sudo yum update -y
@@ -66,34 +67,26 @@ sudo yum install git python3 -y
 # Install Python dependencies
 sudo python3 -m ensurepip --upgrade
 pip3 install python-dotenv flask flask_sqlalchemy psycopg2-binary
-
-Pip3 install python-dotenv
-Flask
-Pip3 install flask
-Pip3 install flask_sqlalchemy
-SQLalchemy
-Pip3 install sqlalchemy
-postgreSQL
 Sudo yum install postgresql postgresql-devel
 Pip3 install psycopg2-binary
-Creating PostgresSQL RDS
+
+###Creating PostgresSQL RDS
 PostgreSQL / Free Tier / Single DB instance / jeremy-twoge-db / UN postgres  PA 11111111 / connect to jeremy-twoge-ec2 / jeremy-twoge-sg /  
-CMD line
 
 export DATABASE_URL="postgresql://postgres:11111111@jeremy-twoge-db.cvyw6igek2bp.us-east-1.rds.amazonaws.com:5432/twogedb"
 vim .env
-# Add the following to .env
+#Add the following to .env
 SQLALCHEMY_DATABASE_URI=postgresql://postgres:11111111@jeremy-twoge-db.cvyw6igek2bp.us-east-1.rds.amazonaws.com:5432/twogedb
 SECRET_KEY=mysecretkey
 DEBUG=True
 
-#Virtual Evnironment setup
+###Virtual Evnironment setup
 python3 -m venv venv
 source venv/bin/activate
 cd twoge
 pip3 install -r requirements.txt
 
-Launching Application 
+###Launching Application 
 Python3 app.py
 Navigate to EC2 and open Public IPv4 address 
 Create Amazon Application Load Balancer
@@ -126,7 +119,7 @@ echo "DEBUG=True" >> .env
 nohup venv/bin/python app.py > app.log 2>&1 &
 
 
-Create EC2 autoscaling group
+###Create EC2 autoscaling group
 Create ALB, Launch Template, CloudWatch Metrics
 1. Jeremy-twoge-asg / jeremy-twoge-launchtemplate
 2 . Jeremy-twoge-vpc / us-east-1a(jeremy-twoge-public1) + us-east-1b(jeremy-twoge-public2)
