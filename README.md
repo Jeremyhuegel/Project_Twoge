@@ -125,7 +125,7 @@ echo "SECRET_KEY=mysecretkey" >> .env
 echo "DEBUG=True" >> .env
 nohup venv/bin/python app.py > app.log 2>&1 &
 
-```bash
+```
 
 ###Create EC2 autoscaling group
 Create ALB, Launch Template, CloudWatch Metrics
