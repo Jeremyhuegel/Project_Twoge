@@ -128,7 +128,7 @@ nohup venv/bin/python app.py > app.log 2>&1 &
 
 ```
 
-###Create EC2 autoscaling group
+### Create EC2 autoscaling group
 Create ALB, Launch Template, CloudWatch Metrics
 1. Jeremy-twoge-asg / jeremy-twoge-launchtemplate
 2 . Jeremy-twoge-vpc / us-east-1a(jeremy-twoge-public1) + us-east-1b(jeremy-twoge-public2)
