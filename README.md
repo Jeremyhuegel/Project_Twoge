@@ -134,3 +134,7 @@ Create ALB, Launch Template, CloudWatch Metrics
 3. Attach to jeremy-twoge-public load balancer / turn on Elastic Load Balancing Health Checks / 30 seconds
 4. Capacity 2  / min 1 max 3
 5. Add topic / jeremy-twoge-sns / jeremyhuegel@gmail.com / SNS IDL arn:aws:sns:us-east-1:536697237321:jeremy-twoge-sns:3940d3de-c6a6-41e3-8180-8a21c6f6ed81
+
+
+![Twoge-Diagram](https://github.com/user-attachments/assets/f6204b0a-d33b-4666-9592-cc58b7b70111)
+
