@@ -1,5 +1,6 @@
 README.txt
 
+![Alt text]()
 
 
 # Twoge Infrastructure Setup
@@ -44,6 +45,7 @@ README.txt
   - Allow public access
   - Enable versioning
   - Add bucket policy to allow public access
+![S3 Bucket Policy](https://github.com/user-attachments/assets/419da1a7-5ffd-4a87-a389-76a160b438cd)
 
 
 
