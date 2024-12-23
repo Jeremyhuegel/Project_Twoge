@@ -62,6 +62,9 @@ README.txt
 - **Network**: `jeremy-twoge-vpc`, `jeremy-twoge-public1`
 - **Security Group**: `jeremy-twoge-sg` (allow SSH, HTTP, PostgreSQL rules)
 
+###Creating PostgresSQL RDS
+PostgreSQL / Free Tier / Single DB instance / jeremy-twoge-db / UN postgres  PA 11111111 / connect to jeremy-twoge-ec2 / jeremy-twoge-sg / 
+
 ## Installation on EC2
 ```bash
 # Update
@@ -76,8 +79,6 @@ pip3 install python-dotenv flask flask_sqlalchemy psycopg2-binary
 Sudo yum install postgresql postgresql-devel
 Pip3 install psycopg2-binary
 
-###Creating PostgresSQL RDS
-PostgreSQL / Free Tier / Single DB instance / jeremy-twoge-db / UN postgres  PA 11111111 / connect to jeremy-twoge-ec2 / jeremy-twoge-sg /  
 
 export DATABASE_URL="postgresql://postgres:11111111@jeremy-twoge-db.cvyw6igek2bp.us-east-1.rds.amazonaws.com:5432/twogedb"
 vim .env
@@ -124,6 +125,7 @@ echo "SECRET_KEY=mysecretkey" >> .env
 echo "DEBUG=True" >> .env
 nohup venv/bin/python app.py > app.log 2>&1 &
 
+```bash
 
 ###Create EC2 autoscaling group
 Create ALB, Launch Template, CloudWatch Metrics
