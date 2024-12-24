@@ -94,10 +94,11 @@ source venv/bin/activate
 cd twoge
 pip3 install -r requirements.txt
 
-###Launching Application 
+### Launching Application 
 Python3 app.py
-Navigate to EC2 and open Public IPv4 address 
-Create Amazon Application Load Balancer
+Navigate to EC2 and open Public IPv4 address
+
+### Create Amazon Application Load Balancer
 Application Load Balancer
 Jeremy-alb / ipv4 
 Jeremy-twoge-vpc
@@ -106,7 +107,8 @@ AZ us-east-1b / jeremy-twoge-public2
 Jeremy-twoge-sg
 Add HTTP:80 and HTTP:5000 rule 
 Target group / instances / jeremy-twoge-public / jeremy-twoge-vpc
-Create Launch Template
+
+### Create Launch Template
 Jeremy-twoge-launchtemplate
 Amazon Linux 2 AMI
 T2.micro
